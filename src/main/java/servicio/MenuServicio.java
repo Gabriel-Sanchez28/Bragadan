@@ -3,7 +3,7 @@ package servicio;
 import dominio.ConfigProducto;
 import dominio.Producto;
 import dominio.ProductoFactoryRegistry;
-import infraestructura.MenuRepositorio;
+import infraestructura.repositorio.MenuRepositorio;
 
 import java.util.List;
 import java.util.Objects;

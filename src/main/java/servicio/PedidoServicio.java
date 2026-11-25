@@ -1,7 +1,7 @@
 package servicio;
 
 import dominio.*;
-import infraestructura.PedidoRepositorio;
+import infraestructura.repositorio.PedidoRepositorio;
 
 import java.util.ArrayList;
 import java.util.List;
