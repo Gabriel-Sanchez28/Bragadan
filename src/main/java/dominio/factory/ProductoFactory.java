@@ -1,4 +1,4 @@
-package factory;
+package dominio.factory;
 
 import com.bragadan.dominio.modelo.Producto;
 import com.bragadan.dominio.modelo.TipoProducto;
