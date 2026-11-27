@@ -23,8 +23,7 @@ public final class MonedaUtils {
     }
 
     /**
-     * Redondea un importe a 2 decimales con RoundingMode.HALF_UP.
-     * Si es nulo, retorna 0.00.
+     * Redondea un importe a 2 decimales
      */
     public static BigDecimal redondear(BigDecimal monto) {
         if (monto == null) {
