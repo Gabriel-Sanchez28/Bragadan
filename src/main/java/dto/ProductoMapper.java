@@ -1,17 +1,15 @@
 package dto;
 
 import comun.MonedaUtils;
-import dominio.modelo.Pedido;
+import dominio.factory.ConfigProducto;
 import dominio.modelo.Producto;
+import dominio.modelo.TipoProducto;
 
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 /**
- * Mapper para convertir entre la entidad de dominio Pedido y sus DTOs correspondientes.
+ * Mapper para convertir entre entidades de dominio de productos y sus respectivos DTOs.
  */
 public final class ProductoMapper {
 

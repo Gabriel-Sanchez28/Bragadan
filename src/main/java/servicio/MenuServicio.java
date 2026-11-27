@@ -1,8 +1,13 @@
 package servicio;
 
-import dominio.ConfigProducto;
-import dominio.Producto;
-import dominio.ProductoFactoryRegistry;
+
+import dominio.excepcion.ProductoNoEncontradoException;
+import dominio.factory.ConfigProducto;
+import dominio.factory.ProductoFactoryRegistry;
+import dominio.modelo.Producto;
+import dto.ConfigProductoDTO;
+import dto.ProductoDTO;
+import dto.ProductoMapper;
 import infraestructura.repositorio.MenuRepositorio;
 
 import java.util.List;
