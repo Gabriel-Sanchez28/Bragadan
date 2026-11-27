@@ -39,9 +39,7 @@ public final class MonedaUtils {
         return redondear(monto);
     }
 
-    /**
-     * Formatea un valor monetario para presentación.
-     */
+    //Formatea un valor monetario para presentación.
     public static String formatear(BigDecimal monto) {
         return FORMATO_MONEDA.format(redondear(monto));
     }
