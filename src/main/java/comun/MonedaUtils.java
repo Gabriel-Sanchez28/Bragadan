@@ -1,4 +1,4 @@
-package dominio.comun;
+package comun;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
