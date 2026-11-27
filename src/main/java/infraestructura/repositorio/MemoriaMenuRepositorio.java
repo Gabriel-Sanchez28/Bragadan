@@ -1,6 +1,6 @@
 package infraestructura.repositorio;
 
-import dominio.ConfigProducto;
+import dominio.factory.ConfigProducto;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

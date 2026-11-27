@@ -1,6 +1,9 @@
 package infraestructura.config;
 
-import dominio.ConfigProducto;
+import dominio.factory.ConfigProducto;
+import dominio.modelo.CategoriaPlato;
+import dominio.modelo.TemperaturaBebida;
+import dominio.modelo.TipoProducto;
 import infraestructura.repositorio.MenuRepositorio;
 
 import java.math.BigDecimal;

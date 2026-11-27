@@ -1,6 +1,5 @@
 package servicio;
 
-import dominio.*;
 import dominio.decorator.Crema;
 import dominio.decorator.LecheAlmendra;
 import dominio.decorator.Queso;
