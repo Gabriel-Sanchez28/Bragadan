@@ -1,6 +1,6 @@
 package dominio.modelo;
 
-import com.bragadan.comun.MonedaUtils;
+import comun.MonedaUtils;
 
 import java.math.BigDecimal;
 import java.util.Collections;

@@ -1,8 +1,8 @@
 package dominio.decorator;
 
-import com.bragadan.comun.MonedaUtils;
-import com.bragadan.dominio.modelo.Producto;
-import com.bragadan.dominio.modelo.TipoProducto;
+import comun.MonedaUtils;
+import dominio.modelo.Producto;
+import dominio.modelo.TipoProducto;
 
 import java.math.BigDecimal;
 import java.util.Objects;

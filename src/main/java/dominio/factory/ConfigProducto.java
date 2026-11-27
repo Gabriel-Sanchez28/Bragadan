@@ -1,7 +1,7 @@
 package dominio.factory;
 
-import com.bragadan.comun.MonedaUtils;
-import com.bragadan.dominio.modelo.TipoProducto;
+import comun.MonedaUtils;
+import dominio.modelo.TipoProducto;
 
 import java.math.BigDecimal;
 import java.util.Collections;

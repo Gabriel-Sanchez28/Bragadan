@@ -1,6 +1,12 @@
 package servicio;
 
 import dominio.*;
+import dominio.modelo.Pedido;
+import dominio.observer.Caja;
+import dominio.observer.Cocina;
+import dominio.observer.Mesero;
+import dominio.observer.PedidoObserver;
+import dto.PedidoDTO;
 import infraestructura.repositorio.PedidoRepositorio;
 
 import java.util.ArrayList;

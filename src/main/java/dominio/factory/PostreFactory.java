@@ -1,9 +1,9 @@
 package dominio.factory;
 
-import com.bragadan.dominio.excepcion.ConfiguracionInvalidaException;
-import com.bragadan.dominio.modelo.Postre;
-import com.bragadan.dominio.modelo.Producto;
-import com.bragadan.dominio.modelo.TipoProducto;
+import dominio.excepcion.ConfiguracionInvalidaException;
+import dominio.modelo.Postre;
+import dominio.modelo.Producto;
+import dominio.modelo.TipoProducto;
 
 import java.util.Objects;
 

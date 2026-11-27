@@ -1,8 +1,8 @@
 package dominio.observer;
 
-import com.bragadan.comun.MonedaUtils;
-import com.bragadan.dominio.modelo.EstadoPedido;
-import com.bragadan.dominio.modelo.Pedido;
+import comun.MonedaUtils;
+import dominio.modelo.EstadoPedido;
+import dominio.modelo.Pedido;
 
 import java.util.ArrayList;
 import java.util.Collections;

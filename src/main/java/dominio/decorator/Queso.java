@@ -1,6 +1,6 @@
 package dominio.decorator;
 
-import com.bragadan.dominio.modelo.Producto;
+import dominio.modelo.Producto;
 
 import java.math.BigDecimal;
 

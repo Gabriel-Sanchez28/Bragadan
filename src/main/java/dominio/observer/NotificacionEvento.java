@@ -1,6 +1,6 @@
 package dominio.observer;
 
-import com.bragadan.dominio.modelo.EstadoPedido;
+import dominio.modelo.EstadoPedido;
 
 import java.time.LocalDateTime;
 

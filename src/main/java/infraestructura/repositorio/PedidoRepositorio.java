@@ -1,6 +1,6 @@
 package infraestructura.repositorio;
 
-import dominio.Pedido;
+import dominio.modelo.Pedido;
 
 import java.util.List;
 import java.util.Optional;

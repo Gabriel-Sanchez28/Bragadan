@@ -1,7 +1,7 @@
 package dominio.builder;
 
-import com.bragadan.dominio.modelo.Combo;
-import com.bragadan.dominio.modelo.Producto;
+import dominio.modelo.Combo;
+import dominio.modelo.Producto;
 
 import java.math.BigDecimal;
 import java.util.Objects;

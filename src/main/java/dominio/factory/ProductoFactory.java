@@ -1,7 +1,8 @@
 package dominio.factory;
 
-import com.bragadan.dominio.modelo.Producto;
-import com.bragadan.dominio.modelo.TipoProducto;
+
+import dominio.modelo.Producto;
+import dominio.modelo.TipoProducto;
 
 /**
  * Interfaz del patrón Factory Method para la creación de productos en Bragadan.

@@ -1,8 +1,8 @@
 package dominio.modelo;
 
-import com.bragadan.comun.MonedaUtils;
-import com.bragadan.dominio.excepcion.TransicionEstadoInvalidaException;
-import com.bragadan.dominio.observer.PedidoObserver;
+import comun.MonedaUtils;
+import dominio.excepcion.TransicionEstadoInvalidaException;
+import dominio.observer.PedidoObserver;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

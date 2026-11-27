@@ -1,6 +1,6 @@
 package dominio.excepcion;
 
-import com.bragadan.dominio.modelo.EstadoPedido;
+import dominio.modelo.EstadoPedido;
 
 /**
  * Lanzada cuando se intenta una transición de estado ilegal en el ciclo de vida de un pedido.

@@ -1,6 +1,6 @@
 package infraestructura.repositorio;
 
-import dominio.ConfigProducto;
+import dominio.factory.ConfigProducto;
 
 import java.util.List;
 import java.util.Optional;

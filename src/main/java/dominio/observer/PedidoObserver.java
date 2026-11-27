@@ -1,7 +1,7 @@
 package dominio.observer;
 
-import com.bragadan.dominio.modelo.EstadoPedido;
-import com.bragadan.dominio.modelo.Pedido;
+import dominio.modelo.EstadoPedido;
+import dominio.modelo.Pedido;
 
 /**
  * Interfaz para los observadores del ciclo de vida de un pedido en Bragadan.
