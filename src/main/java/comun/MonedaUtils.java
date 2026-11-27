@@ -8,7 +8,7 @@ import java.util.Objects;
 
 /**
  * Utilidades monetarias centralizadas para la cafetería Bragadan.
- * Asegura el uso consistente de BigDecimal, escala a 2 decimales y RoundingMode.HALF_UP.
+ * Asegura el uso consistente de BigDecimal, escala a2 decimales y RoundingMode.HALF_UP.
  */
 public final class MonedaUtils {
 
