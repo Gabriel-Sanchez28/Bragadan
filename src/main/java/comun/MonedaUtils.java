@@ -11,7 +11,6 @@ import java.util.Objects;
  * Asegura el uso consistente de BigDecimal, escala a 2 decimales y RoundingMode.HALF_UP.
  */
 public final class MonedaUtils {
-
     public static final int ESCALA = 2;
     public static final RoundingMode MODO_REDONDEO = RoundingMode.HALF_UP;
     public static final BigDecimal CERO = BigDecimal.ZERO.setScale(ESCALA, MODO_REDONDEO);
