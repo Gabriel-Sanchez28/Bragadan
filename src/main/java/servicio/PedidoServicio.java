@@ -1,12 +1,22 @@
 package servicio;
 
 import dominio.*;
+import dominio.decorator.Crema;
+import dominio.decorator.LecheAlmendra;
+import dominio.decorator.Queso;
+import dominio.decorator.ShotExtra;
+import dominio.excepcion.PedidoNoEncontradoException;
+import dominio.modelo.EstadoPedido;
 import dominio.modelo.Pedido;
+import dominio.modelo.Producto;
 import dominio.observer.Caja;
 import dominio.observer.Cocina;
 import dominio.observer.Mesero;
 import dominio.observer.PedidoObserver;
+import dto.CambioEstadoRequestDTO;
 import dto.PedidoDTO;
+import dto.PedidoMapper;
+import dto.ResumenPedidoDTO;
 import infraestructura.repositorio.PedidoRepositorio;
 
 import java.util.ArrayList;
