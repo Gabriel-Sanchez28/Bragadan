@@ -22,9 +22,7 @@ public final class MonedaUtils {
         // Clase de utilidades no instanciable
     }
 
-    /**
-     * Redondea un importe a 2 decimales
-     */
+    //Redondea un importe a 2 decimales
     public static BigDecimal redondear(BigDecimal monto) {
         if (monto == null) {
             return CERO;
