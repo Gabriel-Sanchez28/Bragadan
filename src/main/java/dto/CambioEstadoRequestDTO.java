@@ -1,4 +1,4 @@
-package com.bragadan.dto;
+package dto;
 
 /**
  * DTO para solicitar la transición de estado de un pedido en Bragadan.

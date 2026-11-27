@@ -1,8 +1,8 @@
 package dto;
 
-import com.bragadan.comun.MonedaUtils;
-import com.bragadan.dominio.modelo.Pedido;
-import com.bragadan.dominio.modelo.Producto;
+import comun.MonedaUtils;
+import dominio.modelo.Pedido;
+import dominio.modelo.Producto;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -13,63 +13,63 @@ import java.util.List;
 /**
  * Mapper para convertir entre la entidad de dominio Pedido y sus DTOs correspondientes.
  */
-public final class PedidoMapper {
+public final class ProductoMapper {
 
-    private PedidoMapper() {
+    private ProductoMapper() {
     }
 
-    public static PedidoDTO toDTO(Pedido pedido) {
-        if (pedido == null) {
+    public static ProductoDTO toDTO(Producto producto) {
+        if (producto == null) {
             return null;
         }
-        List<ProductoDTO> itemsDTO = ProductoMapper.toDTOList(pedido.getItems());
-        BigDecimal total = pedido.calcularTotal();
-
-        return new PedidoDTO(
-                pedido.getId(),
-                pedido.getEstado().name(),
-                itemsDTO,
-                total,
-                MonedaUtils.formatear(total),
-                pedido.getFechaCreacion(),
-                pedido.getItems().size()
+        return new ProductoDTO(
+                producto.getCodigo(),
+                producto.getNombre(),
+                producto.getDescripcion(),
+                producto.getPrecio(),
+                MonedaUtils.formatear(producto.getPrecio()),
+                producto.getTipo() != null ? producto.getTipo().name() : "DESCONOCIDO"
         );
     }
 
-    public static List<PedidoDTO> toDTOList(List<Pedido> pedidos) {
-        if (pedidos == null) {
+    public static List<ProductoDTO> toDTOList(List<Producto> productos) {
+        if (productos == null) {
             return Collections.emptyList();
         }
-        return pedidos.stream()
-                .map(PedidoMapper::toDTO)
+        return productos.stream()
+                .map(ProductoMapper::toDTO)
                 .toList();
     }
 
-    public static ResumenPedidoDTO toResumenDTO(Pedido pedido) {
-        if (pedido == null) {
+    public static ConfigProducto toConfig(ConfigProductoDTO dto) {
+        if (dto == null) {
             return null;
         }
-        List<String> lineas = new ArrayList<>();
-        List<Producto> items = pedido.getItems();
+        TipoProducto tipo = dto.tipo() != null
+                ? TipoProducto.valueOf(dto.tipo().trim().toUpperCase())
+                : TipoProducto.BEBIDA;
 
-        for (int i = 0; i < items.size(); i++) {
-            Producto item = items.get(i);
-            lineas.add(String.format(" %d. %-30s %s (%s)",
-                    (i + 1),
-                    item.getNombre(),
-                    MonedaUtils.formatear(item.getPrecio()),
-                    item.getDescripcion()));
+        return new ConfigProducto(
+                dto.codigo(),
+                dto.nombre(),
+                dto.descripcion(),
+                dto.precioBase(),
+                tipo,
+                dto.atributos()
+        );
+    }
+
+    public static ConfigProductoDTO toConfigDTO(ConfigProducto config) {
+        if (config == null) {
+            return null;
         }
-
-        BigDecimal total = pedido.calcularTotal();
-
-        return new ResumenPedidoDTO(
-                pedido.getId(),
-                pedido.getEstado().name(),
-                lineas,
-                total,
-                MonedaUtils.formatear(total),
-                LocalDateTime.now()
+        return new ConfigProductoDTO(
+                config.getCodigo(),
+                config.getNombre(),
+                config.getDescripcion(),
+                config.getPrecioBase(),
+                config.getTipo().name(),
+                config.getAtributos()
         );
     }
 }
