@@ -22,9 +22,7 @@ public final class MonedaUtils {
         // Clase de utilidades no instanciable
     }
 
-    /**
-     * Redondea un importe a 2 decimales
-     */
+    //Redondea un importe a 2 decimales
     public static BigDecimal redondear(BigDecimal monto) {
         if (monto == null) {
             return CERO;
@@ -32,9 +30,7 @@ public final class MonedaUtils {
         return monto.setScale(ESCALA, MODO_REDONDEO);
     }
 
-    /**
-     * Valida que un importe no sea nulo ni negativo.
-     */
+    //Valida que un importe no sea nulo ni negativo.
     public static BigDecimal validarMontoNoNegativo(BigDecimal monto, String nombreCampo) {
         Objects.requireNonNull(monto, nombreCampo + " no puede ser nulo");
         if (monto.compareTo(BigDecimal.ZERO) < 0) {
@@ -43,9 +39,7 @@ public final class MonedaUtils {
         return redondear(monto);
     }
 
-    /**
-     * Formatea un valor monetario para presentación.
-     */
+    //Formatea un valor monetario para presentación.
     public static String formatear(BigDecimal monto) {
         return FORMATO_MONEDA.format(redondear(monto));
     }
