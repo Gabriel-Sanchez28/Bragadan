@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * DTO inmutable que expone la información completa de un pedido hacia capas externas
+ * DTO inmutable que expone la información completa de un pedido hacia capas externas.
  */
 public record PedidoDTO(
         Long id,
